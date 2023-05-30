@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: -webkit-linear-gradient(75deg, #5DA7DB 50%, #E4E9FD 50%);height: 100%;
+    background-repeat:no-repeat;
+
+    /*for background image
+    background-image: -webkit-linear-gradient(65deg, #5DA7DB  50%, transparent 50%), url("images/background.jpg");width:100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    */
+
+}
+
+
+a.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 10px 10px;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #404040;
+    font-family: cursive;
+    font-weight: 700;
+
+}
+
+nav.main-navigation {
+    position: relative;
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+nav.main-navigation ul.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    text-align: right;
+}
+
+.nav-list li.nav-list-item {
+    display: inline-block;
+    line-height: 40px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+a.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: #404040;
+}
+
+a.name {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 25px;
+}
+
+.my-pic{
+  width: 50%;
+  position: absolute;
+  right:10%;
+  padding-top: 2rem;
+  text-align: right;
+}
+
+.pic{
+  width: 65%;
+  animation-delay: .3s;
+}
+
+.heading.title{
+  font-size: 3rem;
+}
+
+
+
+.red{
+  background-color:  red;
+  padding:3%;
+}
+
+.big-heading{
+  position: relative;
+  width: 50%;
+  padding:10% 0% 5% 10%;
+  animation: fadeInRight 1s;
+}
+
+.contacts-icon{
+  animation: fadeInRight 1s;
+  padding-left: 10%;
+  font-size: 1.5rem;
+}
+
+#aboutMe{
+  position:relative;
+  padding: 3% 10%;
+  top:50px;
+  background-color: #E4E9FD;
+}
+
+
+.section-title{
+  text-align: center;
+}
+
+.icons{
+  padding-right: 1.25rem;
+  color: #252525;
+}
+
+.btn:hover{
+  background-color: #0AA1DD;
+  border-color: #0AA1DD;
+}
+
+.icons:hover{
+  color: #0AA1DD;
+}
+.content-right{
+  text-align:justify;
+  padding-left:55%;
+}
+
+.download-btn{
+  margin-top: 5%;
+}
+
+.about-left-pic{
+  width: 50%;
+  position: absolute;
+  right:10%;
+  padding-top: 2rem;
+  text-align:left;
+}
+
+.about{
+  padding-bottom: 2.5rem;
+}
+
+
+.aboutMe-images{
+  width:35%;
+}
+
+
+
+/*start Expertise css design */
+
+#expertise{
+  position:relative;
+  padding: 3% 10%;
+  background-color:#5DA7DB;
+}
+
+#expertise .service-container h1 {
+  font-size: 1.7rem;
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+#expertise .service-container .service {
+  background-color: #252525;
+  color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  padding: 15px;
+}
+
+#expertise .service-container .services {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+#expertise .service-container .services i {
+  font-size: 3rem;
+  padding-top: 40px;
+}
+
+#expertise .service-container .title {
+
+  font-size: 1.75rem;
+  padding: 25px 15px 0;
+}
+
+#expertise .service-container p {
+  padding: 17px;
+}
+
+#expertise .service-container .text {
+  border-bottom: 3px solid #777;
+  font-size: 1.10rem;
+}
+
+#expertise .service-container .web{
+  font-size: 1.10rem;
+}
+
+.expertise-title{
+  font-size: 2rem
+}
+
+
+/*programming icon css*/
+#pl-section{
+  background-color: #E4E9FD;
+}
+.pl-icons{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 5rem;
+}
+
+.pl-pic{
+  width:5rem;
+  padding-top: 2rem;
+}
+
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+        -webkit-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        pointer-events: auto;
+        transition: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.nav-list li {
+    animation: FadeIn 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+    animation-fill-mode: both;
+}
+
+.nav-list li:nth-child(1) {
+    animation-delay: .3s;
+}
+
+.nav-list li:nth-child(2) {
+    animation-delay: .6s;
+}
+
+.nav-list li:nth-child(3) {
+    animation-delay: .9s;
+}
+
+.nav-list li:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+.nav-list li:nth-child(5) {
+    animation-delay: 1.5s;
+}
+
+/* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0;
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+@media (max-width:1028px) {
+
+
+  .big-heading{
+    width: 100%;
+    padding-top: 50px;
+    position: static;
+    z-index: 1;
+    background-color: #5DA7DB;
+    }
+
+
+  .my-pic{
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    position: static;
+    z-index: 1;
+    }
+
+    .container-fluid{
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+
+    .contacts-icon{
+      background-color: #5DA7DB;
+      padding-bottom: 25px;
+    }
+
+    #aboutMe{
+    top: 0px;
+    padding-top: 50px;
+    }
+}
